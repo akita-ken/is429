@@ -8,6 +8,19 @@
 <body ng-controller="userController">
 <div class="container">
 
+<div class="navbar">
+  <div class="navbar-inner">
+    <a class="brand" href="#">Static CRM</a>
+    <ul class="nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Leads</a></li>
+      <li><a href="#">Customers</a></li>
+      <li><a href="#">Lost</a></li>
+      <li><a href="#">Analytics</a></li>
+    </ul>
+  </div>
+</div>
+
 <h3>Users</h3>
 
 <table class="table table-striped">
@@ -42,9 +55,8 @@
 </button>
 <hr>
 
-
-<h3 ng-show="edit">Create New User:</h3>
-<h3 ng-hide="edit">Edit User:</h3>
+<h3 ng-show="edit">Add new customer:</h3>
+<h3 ng-hide="edit">Edit customer:</h3>
 
 <form class="form-horizontal">
   <div class="form-group">
